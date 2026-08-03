@@ -3,19 +3,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nosmoke"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    namespace = "com.bezdyma.app"
+    compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.example.nosmoke"
+        applicationId = "com.bezdyma.app"
         minSdk = 24
-        targetSdk = 36
-        versionCode = 3
-        versionName = "3.0"
+        targetSdk = 35
+        versionCode = 5
+        versionName = "4.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -41,6 +37,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+    implementation(libs.play.services.ads)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
